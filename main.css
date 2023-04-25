@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header,
+section h2,
+input, button,
+body, footer {
+	font-family: 'Open Sans', sans-serif;
+}
+
+main {
+	height: 1080px;
+	width: auto;
+	background: url(imagens/tavern.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+header{
+	text-align: center;
+	padding: 16px;
+	background-color: rgb(231, 231, 219);
+}
+
+.container {
+	max-width: 1366px;
+    /*Utilizar max-width com a resolução máxima desejada e width 100% para não ultrapassar essa resolução*/
+    width: 100%;
+    margin: 0 auto;
+	text-align: center;
+}
+
+.container h2 {
+	text-transform: uppercase;
+	text-shadow: 2px 0 #333, -2px 0 #333, 0 2px #333, 0 -2px #333,
+	1px 1px #333, -1px -1px #333, 1px -1px #333, -1px 1px #333;
+}
+
+header .container {
+	display: flex; /*Alinha em linhas*/
+    align-items: center; /*Alinha os itens ao centro*/
+    justify-content: space-between; /*Distribui os itens igualmente. Primeiro item no inicio e último no fim*/
+}
+
+header .banner {
+	height: 134px;
+	width: 384px;
+}
+
+header li {
+	display: inline;
+	margin-left: 20px;
+    font-size: 24px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+header li a {
+	text-decoration: none;
+	color: #333;
+}
+
+header li a:hover {
+	color: #ff0000;
+}
+
+#signin .container h2 {
+	margin-bottom: 20px;
+}
+
+#signin .container{
+	padding: 80px 0 60px 0;
+	text-align: center;
+	margin: 0 auto;
+	display: grid;
+	justify-content: center;
+}
+
+#signin,
+#about {
+	color: rgb(255, 255, 255);
+	border-color: #333;
+	font-size: xx-large;
+}
+
+form input,
+form button {
+	display: block;
+    width: 500px;
+	color: #333;
+    margin-bottom: 20px;
+    padding: 8px;
+	font-size: large;
+}
+
+form button {
+	background-color: rgb(231, 231, 219);
+	font-weight: 600;
+	cursor: pointer;
+}
+
+#about .container {
+	padding-bottom: 80px;
+}
+
+#about p {
+	margin: 20px;
+	text-shadow: 2px 0 #333, -2px 0 #333, 0 2px #333, 0 -2px #333,
+	1px 1px #333, -1px -1px #333, 1px -1px #333, -1px 1px #333;
+}
+
+footer {
+	text-align: center;
+	padding: 16px;
+	background-color: rgb(231, 231, 219);
+}
