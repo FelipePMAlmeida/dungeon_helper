@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Criacão de ficha</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img class="banner" src="./imagens/dungeons_dragons_logo.png" alt="Logo D&D">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <table class="infos-basicas">
+                <caption>Criar Personagem</caption>
+                <thead>
+                    <tr>
+                        <th colspan="3">Nome do Personagem</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input class="text-nome" type="text" name="pnome"></td>
+                    </tr>
+                </thead>
+                <tr>
+                    <th>Nível do Personagem</th>
+                    <th>Classe</th>
+                    <th>Nome do Jogador</th>
+                </tr>
+                <tr>
+                    <td><input value="1" readonly></td>
+                    <td>
+                        <select class="pclass">
+                            <option value="barbaro">Bárbaro</option>
+                            <option value="bardo">Bardo</option>
+                            <option value="clerigo">Clérigo</option>
+                            <option value="druida">Druida</option>
+                            <option value="guerreiro">Guerreiro</option>
+                            <option value="monge">Monge</option>
+                            <option value="paladino">Paladino</option>
+                            <option value="patrulheiro">Patrulheiro</option>
+                            <option value="ladino">Ladino</option>
+                            <option value="feiticeiro">Feiticeiro</option>
+                            <option value="bruxo">Bruxo</option>
+                            <option value="mago">Mago</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="jnome"></td>
+                </tr>
+                <tr>
+                    <th>Raça</th>
+                    <th>Alinhamento</th>
+                    <th>Experiência</th>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="praca">
+                            <option value="draconato">Draconato</option>
+                            <option value="anao">Anão</option>
+                            <option value="elfo">Elfo</option>
+                            <option value="gnomo">Gnomo</option>
+                            <option value="meio-elfo">Meio-Elfo</option>
+                            <option value="pequenino">Pequenino</option>
+                            <option value="meio-orc">Meio-Orc</option>
+                            <option value="humano">Humano</option>
+                            <option value="tiferino">Tiferino</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="palinhamento">
+                            <option value="leal-bom">Leal/Bom</option>
+                            <option value="leal-neutro">Leal/Neutro</option>
+                            <option value="leal-mau">Leal/Mau</option>
+                            <option value="neutro-bom">Neutro/Bom</option>
+                            <option value="neutro">Neutro</option>
+                            <option value="neutro-mau">Nautro/Mau</option>
+                            <option value="caotico-bom">Caótico/Bom</option>
+                            <option value="caotico-neutro">Caótico/Neutro</option>
+                            <option value="caotico-mau">Caótico/Mau</option>
+                        </select>
+                    </td>
+                    <td><input value="0" readonly></td>
+                </tr>
+                <tr>
+                    <th>Força</th>
+                    <th>Destreza</th>
+                    <th>Constituição</th>
+                </tr>
+                <tr>
+                    <td><input class="valor-forca" type="number" name="vforca"></td>
+                    <td><input class="valor-destreza" type="number" name="vdestreza"></td>
+                    <td><input class="valor-constituicao" type="number" name="vconstituicao"></td>
+                </tr>
+                <tr>
+                    <th>Inteligência</th>
+                    <th>Sabedoria</th>
+                    <th>Carisma</th>
+                </tr>
+                <tr>
+                    <td><input class="valor-inteligencia" type="number" name="vinteligencia"></td>
+                    <td><input class="valor-sabedoria" type="number" name="vsabedoria"></td>
+                    <td><input class="valor-carisma" type="number" name="vcarisma"></td>
+                </tr>
+            </table>
+            <br>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
