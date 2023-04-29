@@ -14,7 +14,7 @@ body, footer {
 main {
 	height: 1080px;
 	width: auto;
-	background: url(imagens/tavern.jpg) no-repeat;
+	background: url(/./imagens/tavern.jpg) no-repeat;
 	background-position: center;
 	background-size: cover;
 }
@@ -94,6 +94,11 @@ form button {
     margin-bottom: 20px;
     padding: 8px;
 	font-size: large;
+	text-align: center;
+}
+
+form input:focus {
+	outline-color: #ff0000;
 }
 
 form button {
